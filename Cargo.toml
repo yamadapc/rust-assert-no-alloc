@@ -19,3 +19,6 @@ disable_release = []
 
 [package.metadata.docs.rs]
 features = ["warn_debug"]
+
+[dependencies]
+backtrace = "0.3.64"
