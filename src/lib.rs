@@ -23,7 +23,9 @@
 
 #![doc = include_str!("../README.md")]
 
+#[cfg(not(all(feature = "disable_release", not(debug_assertions))))]
 use std::alloc::{GlobalAlloc, Layout, System};
+#[cfg(not(all(feature = "disable_release", not(debug_assertions))))]
 use std::cell::Cell;
 
 // check for mutually exclusive features.
